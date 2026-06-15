@@ -245,39 +245,21 @@ galleryCards.forEach(card => {
 });
 
 
-/* =========================
-   CONTACT CARD EFFECT
-========================= */
+/* CONTACT BUTTON CLICK EFFECT */
 
-const contactCards =
-    document.querySelectorAll(
-        ".contact-card"
-    );
+document.querySelectorAll('.contact-btn').forEach(btn => {
 
-contactCards.forEach(card => {
+    btn.addEventListener('click', () => {
 
-    card.addEventListener(
-        "mouseenter",
-        () => {
+        btn.style.transform = 'scale(0.95)';
 
-            card.style.transform =
-                "translateY(-8px)";
+        setTimeout(() => {
+            btn.style.transform = '';
+        }, 150);
 
-        }
-    );
-
-    card.addEventListener(
-        "mouseleave",
-        () => {
-
-            card.style.transform =
-                "translateY(0)";
-
-        }
-    );
+    });
 
 });
-
 
 /* =========================
    ACTIVE NAV LINK
