@@ -1,319 +1,453 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SUPER SALE Womenswear</title>
+<title>SUPER SALE Womenswear | Premium Women's Fashion Boutique</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta name="description"
+content="SUPER SALE Womenswear - Premium women's fashion boutique in Kudlu, Bengaluru. Stylish collections, elegant designs, and affordable fashion.">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<meta name="keywords"
+content="Women's Fashion, Boutique, Ladies Wear, Kurtis, Fashion Store, Bengaluru, Kudlu">
 
-<style>
+<meta name="author" content="SUPER SALE Womenswear">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-}
+<!-- Open Graph -->
+<meta property="og:title" content="SUPER SALE Womenswear">
+<meta property="og:description" content="Premium Women's Fashion Boutique">
+<meta property="og:type" content="website">
 
-body{
-font-family:'Poppins',sans-serif;
-background:#fff8fb;
-color:#333;
-}
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-nav{
-position:sticky;
-top:0;
-background:white;
-padding:18px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-box-shadow:0 2px 15px rgba(0,0,0,0.08);
-z-index:999;
-}
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-.logo-text{
-font-family:'Cinzel',serif;
-font-size:28px;
-font-weight:700;
-background:linear-gradient(90deg,#b8860b,#ffd700,#b8860b);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-}
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-nav a{
-text-decoration:none;
-color:#444;
-margin-left:20px;
-font-weight:600;
-}
-
-.hero{
-text-align:center;
-padding:80px 20px;
-background:linear-gradient(135deg,#ffeef4,#fff9fc);
-}
-
-.hero img{
-width:220px;
-max-width:80%;
-margin-bottom:25px;
-}
-
-h1,h2{
-font-family:'Cinzel',serif;
-background:linear-gradient(90deg,#b8860b,#ffd700,#b8860b);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-}
-
-.hero h1{
-font-size:55px;
-margin-bottom:10px;
-}
-
-.hero p{
-font-size:18px;
-color:#666;
-margin-bottom:25px;
-}
-
-.btn{
-display:inline-block;
-padding:14px 26px;
-margin:8px;
-border-radius:30px;
-text-decoration:none;
-font-weight:600;
-color:white;
-background:linear-gradient(90deg,#b8860b,#d4af37);
-transition:.3s;
-}
-
-.btn:hover{
-transform:translateY(-3px);
-}
-
-.section{
-padding:70px 10%;
-text-align:center;
-}
-
-.card{
-background:white;
-padding:30px;
-border-radius:20px;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
-max-width:900px;
-margin:auto;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:30px;
-}
-
-.placeholder{
-height:220px;
-border:2px dashed #d4af37;
-border-radius:15px;
-display:flex;
-justify-content:center;
-align-items:center;
-background:white;
-font-weight:600;
-color:#999;
-}
-
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:25px;
-}
-
-.whatsapp{
-position:fixed;
-right:20px;
-bottom:20px;
-width:65px;
-height:65px;
-background:#25D366;
-border-radius:50%;
-display:flex;
-justify-content:center;
-align-items:center;
-color:white;
-font-size:32px;
-text-decoration:none;
-box-shadow:0 5px 15px rgba(0,0,0,.3);
-}
-
-</style>
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav>
-<div class="logo-text">SUPER SALE</div>
+<!-- ========================= -->
+<!-- LOADER -->
+<!-- ========================= -->
 
-<div>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#gallery">Gallery</a>
-<a href="#contact">Contact</a>
+<div id="loader">
+    <div class="loader-logo">
+        <img src="logo.png" alt="SUPER SALE Logo">
+    </div>
 </div>
+
+<!-- ========================= -->
+<!-- HEADER -->
+<!-- ========================= -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo-area">
+
+<img src="logo.png" alt="SUPER SALE">
+
+<div class="logo-text">
+SUPER SALE
+<span>Womenswear</span>
+</div>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#arrivals">Arrivals</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#visit">Visit</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="menu-btn">
+<i class="fas fa-bars"></i>
+</div>
+
 </nav>
+
+</header>
+
+<!-- ========================= -->
+<!-- HERO -->
+<!-- ========================= -->
 
 <section class="hero" id="home">
 
-<img src="logo.png" alt="SUPER SALE Logo">
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<img src="logo.png" class="hero-logo" alt="SUPER SALE">
 
 <h1>SUPER SALE Womenswear</h1>
 
+<h2>Elegance • Style • Confidence</h2>
+
 <p>
-Discover Trendy Women's Fashion<br>
-Elegant Styles • Affordable Prices • New Arrivals Every Week
+Discover beautiful fashion collections crafted for
+modern women. Trendy, affordable and elegant styles
+for every occasion.
 </p>
 
-<a class="btn" href="https://www.instagram.com/super_sale_blr/" target="_blank">
-<i class="fab fa-instagram"></i> Instagram
+<div class="hero-buttons">
+
+<a href="https://www.instagram.com/super_sale_blr/"
+target="_blank"
+class="btn insta-btn">
+<i class="fab fa-instagram"></i>
+Instagram
 </a>
 
-<a class="btn" href="tel:+918618759467">
-<i class="fas fa-phone"></i> Call Now
+<a href="tel:+918618759467"
+class="btn call-btn">
+<i class="fas fa-phone"></i>
+Call Now
 </a>
 
-<a class="btn" href="https://wa.me/918618759467" target="_blank">
-<i class="fab fa-whatsapp"></i> WhatsApp
+<a href="https://wa.me/918618759467"
+target="_blank"
+class="btn whatsapp-btn">
+<i class="fab fa-whatsapp"></i>
+WhatsApp
 </a>
+
+<a href="https://maps.google.com"
+target="_blank"
+class="btn map-btn">
+<i class="fas fa-location-dot"></i>
+Directions
+</a>
+
+</div>
+
+</div>
 
 </section>
+
+<!-- ========================= -->
+<!-- ABOUT -->
+<!-- ========================= -->
 
 <section class="section" id="about">
 
+<div class="container">
+
+<div class="section-title">
 <h2>About Us</h2>
-<br>
+</div>
 
-<div class="card">
-
-<p>
-Welcome to SUPER SALE Womenswear, your destination for stylish and affordable women's fashion.
-
-We are committed to bringing elegant designs, comfortable styles and the latest fashion trends to our customers.
-</p>
-
-<br>
+<div class="about-card">
 
 <p>
-🕙 Store Timings<br>
-10:00 AM – 9:30 PM
+Welcome to SUPER SALE Womenswear, your destination
+for stylish and affordable women's fashion in
+Bengaluru.
 </p>
+
+<p>
+We carefully curate elegant collections designed to
+make every woman feel confident, beautiful and
+fashionable.
+</p>
+
+<p>
+From daily wear to festive styles, we bring fashion
+that blends comfort, quality and trend.
+</p>
+
+</div>
 
 </div>
 
 </section>
 
-<section class="section">
+<!-- ========================= -->
+<!-- TIMINGS -->
+<!-- ========================= -->
 
+<section class="section light-bg">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Store Timings</h2>
+</div>
+
+<div class="timing-card">
+
+<i class="fas fa-clock"></i>
+
+<h3>Open Daily</h3>
+
+<p>10:00 AM - 9:30 PM</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- NEW ARRIVALS -->
+<!-- ========================= -->
+
+<section class="section" id="arrivals">
+
+<div class="container">
+
+<div class="section-title">
 <h2>New Arrivals</h2>
-
-<br>
-
-<div class="card">
-✨ Exciting New Collections Coming Soon ✨
 </div>
 
-</section>
+<div class="coming-soon-card">
 
-<section class="section" id="gallery">
+<i class="fas fa-gem"></i>
 
-<h2>Gallery</h2>
+<h3>Exciting Collections Coming Soon</h3>
 
-<div class="gallery">
+<p>
+Stay tuned for our latest fashion arrivals and
+exclusive styles.
+</p>
 
-<div class="placeholder">
-Future Collection Photo
-</div>
-
-<div class="placeholder">
-Future Collection Photo
-</div>
-
-<div class="placeholder">
-Future Collection Photo
 </div>
 
 </div>
 
 </section>
 
-<section class="section">
+<!-- ========================= -->
+<!-- GALLERY -->
+<!-- ========================= -->
 
+<section class="section light-bg" id="gallery">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Fashion Gallery</h2>
+</div>
+
+<div class="gallery-grid">
+
+<div class="gallery-card">
+<div class="placeholder">
+<i class="fas fa-image"></i>
+</div>
+<p>Collection 1</p>
+</div>
+
+<div class="gallery-card">
+<div class="placeholder">
+<i class="fas fa-image"></i>
+</div>
+<p>Collection 2</p>
+</div>
+
+<div class="gallery-card">
+<div class="placeholder">
+<i class="fas fa-image"></i>
+</div>
+<p>Collection 3</p>
+</div>
+
+<div class="gallery-card">
+<div class="placeholder">
+<i class="fas fa-image"></i>
+</div>
+<p>Collection 4</p>
+</div>
+
+<div class="gallery-card">
+<div class="placeholder">
+<i class="fas fa-image"></i>
+</div>
+<p>Collection 5</p>
+</div>
+
+<div class="gallery-card">
+<div class="placeholder">
+<i class="fas fa-image"></i>
+</div>
+<p>Collection 6</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- VISIT STORE -->
+<!-- ========================= -->
+
+<section class="section" id="visit">
+
+<div class="container">
+
+<div class="section-title">
 <h2>Visit Our Store</h2>
+</div>
 
-<br>
+<div class="visit-card">
 
-<div class="card">
+<i class="fas fa-store"></i>
 
-📍 Opp. ACR Lifestyle Apartment<br>
-51/1, Kudlu Main Road,<br>
-Kudlu, Bengaluru - 560068
+<h3>SUPER SALE Womenswear</h3>
 
-<br><br>
+<p>
+Opp. ACR Lifestyle Apartment<br>
+51/1, Kudlu Main Road<br>
+Kudlu<br>
+Bengaluru - 560068
+</p>
 
-<a class="btn"
-href="https://maps.google.com"
-target="_blank">
+<a href="https://maps.google.com"
+target="_blank"
+class="btn map-btn">
 Get Directions
 </a>
 
 </div>
 
+</div>
+
 </section>
 
-<section class="section" id="contact">
+<!-- ========================= -->
+<!-- CONTACT -->
+<!-- ========================= -->
 
+<section class="section light-bg" id="contact">
+
+<div class="container">
+
+<div class="section-title">
 <h2>Contact Us</h2>
+</div>
 
-<br>
+<div class="contact-grid">
 
-<div class="card">
+<div class="contact-card">
 
-<p>
-📞 <a href="tel:+918618759467">+91 8618759467</a>
-</p>
+<i class="fas fa-phone"></i>
 
-<br>
+<h3>Call Us</h3>
 
-<p>
-📱 <a href="https://www.instagram.com/super_sale_blr/" target="_blank">
-@super_sale_blr
-</a>
-</p>
+<p>+91 8618759467</p>
+
+</div>
+
+<div class="contact-card">
+
+<i class="fab fa-instagram"></i>
+
+<h3>Instagram</h3>
+
+<p>@super_sale_blr</p>
+
+</div>
+
+<div class="contact-card">
+
+<i class="fas fa-location-dot"></i>
+
+<h3>Location</h3>
+
+<p>Kudlu, Bengaluru</p>
+
+</div>
+
+</div>
 
 </div>
 
 </section>
 
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
 <footer>
-© 2026 SUPER SALE Womenswear. All Rights Reserved.
-</footer>
+
+<div class="footer-content">
+
+<img src="logo.png" alt="Logo">
+
+<h3>SUPER SALE Womenswear</h3>
+
+<p>
+Elegance • Style • Confidence
+</p>
+
+<div class="social-icons">
+
+<a href="https://www.instagram.com/super_sale_blr/"
+target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="tel:+918618759467">
+<i class="fas fa-phone"></i>
+</a>
 
 <a href="https://wa.me/918618759467"
-class="whatsapp"
 target="_blank">
 <i class="fab fa-whatsapp"></i>
 </a>
 
+</div>
+
+<p class="copyright">
+© 2026 SUPER SALE Womenswear.
+All Rights Reserved.
+</p>
+
+</div>
+
+</footer>
+
+<!-- ========================= -->
+<!-- FLOATING WHATSAPP -->
+<!-- ========================= -->
+
+<a href="https://wa.me/918618759467"
+target="_blank"
+class="floating-whatsapp">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- ========================= -->
+<!-- BACK TO TOP -->
+<!-- ========================= -->
+
+<button id="topBtn">
+
+<i class="fas fa-arrow-up"></i>
+
+</button>
+
+<!-- JS -->
+<script src="script.js"></script>
+
 </body>
 </html>
-```
