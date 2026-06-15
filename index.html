@@ -1,13 +1,12 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>SUPER SALE Womenswear</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
@@ -18,17 +17,21 @@ padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 font-family:'Poppins',sans-serif;
-background:#fffafc;
+background:#fff8fb;
 color:#333;
 line-height:1.6;
 }
 
 .hero{
-text-align:center;
-padding:50px 20px;
 background:linear-gradient(135deg,#fff0f5,#ffffff);
+padding:60px 20px;
+text-align:center;
 }
 
 .logo{
@@ -39,7 +42,6 @@ margin-bottom:20px;
 
 .gold{
 font-family:'Cinzel',serif;
-font-weight:700;
 background:linear-gradient(90deg,#b8860b,#ffd700,#b8860b);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
@@ -50,27 +52,32 @@ font-size:clamp(2rem,7vw,4rem);
 margin-bottom:10px;
 }
 
-.tagline{
-font-size:1rem;
+.subtitle{
 color:#666;
+font-size:16px;
 margin-bottom:25px;
 }
 
-.button-group{
+.buttons{
 display:flex;
-flex-wrap:wrap;
 justify-content:center;
+flex-wrap:wrap;
 gap:10px;
 }
 
 .btn{
 display:inline-block;
-padding:14px 22px;
+padding:14px 24px;
 border-radius:30px;
 text-decoration:none;
-color:white;
 font-weight:600;
-background:linear-gradient(90deg,#c49b2d,#e3c15b);
+color:white;
+background:linear-gradient(90deg,#b8860b,#d4af37);
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
 }
 
 .section{
@@ -79,18 +86,16 @@ max-width:1000px;
 margin:auto;
 }
 
-.section-title{
+.section h2{
 text-align:center;
-font-size:2rem;
-margin-bottom:25px;
+margin-bottom:20px;
 }
 
 .card{
 background:white;
 padding:25px;
 border-radius:20px;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
-margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
 .gallery{
@@ -106,17 +111,17 @@ border-radius:15px;
 display:flex;
 justify-content:center;
 align-items:center;
-color:#888;
+background:white;
 font-weight:600;
-background:#fff;
+color:#999;
 }
 
-.contact-links a{
+.contact a{
 display:block;
 margin:10px 0;
+font-weight:600;
 text-decoration:none;
 color:#333;
-font-weight:600;
 }
 
 footer{
@@ -124,13 +129,13 @@ background:#111;
 color:white;
 text-align:center;
 padding:20px;
-margin-top:30px;
+margin-top:40px;
 }
 
-.whatsapp-float{
+.whatsapp{
 position:fixed;
-right:20px;
 bottom:20px;
+right:20px;
 width:60px;
 height:60px;
 background:#25D366;
@@ -139,17 +144,22 @@ display:flex;
 justify-content:center;
 align-items:center;
 color:white;
-font-size:30px;
+font-size:28px;
 text-decoration:none;
 box-shadow:0 5px 15px rgba(0,0,0,.3);
 }
 
 @media(max-width:768px){
 
+.logo{
+width:150px;
+}
+
 .btn{
+display:block;
 width:100%;
 max-width:320px;
-text-align:center;
+margin:auto;
 }
 
 .gallery{
@@ -169,15 +179,15 @@ grid-template-columns:1fr;
 
 <h1 class="gold">SUPER SALE Womenswear</h1>
 
-<p class="tagline">
+<p class="subtitle">
 Discover Trendy Women's Fashion<br>
-Elegant Styles • Affordable Prices • New Arrivals Every Week
+Elegant Styles • Affordable Prices
 </p>
 
-<div class="button-group">
+<div class="buttons">
 
 <a class="btn" href="https://www.instagram.com/super_sale_blr/" target="_blank">
-<i class="fab fa-instagram"></i> Follow Instagram
+<i class="fab fa-instagram"></i> Instagram
 </a>
 
 <a class="btn" href="tel:+918618759467">
@@ -194,11 +204,13 @@ Elegant Styles • Affordable Prices • New Arrivals Every Week
 
 <section class="section">
 
-<h2 class="section-title gold">About Us</h2>
+<h2 class="gold">About Us</h2>
 
 <div class="card">
 
-Welcome to SUPER SALE Womenswear, your destination for stylish and affordable women's fashion.
+Welcome to SUPER SALE Womenswear.
+
+We bring stylish and affordable women's fashion for every occasion.
 
 <br><br>
 
@@ -211,7 +223,7 @@ Welcome to SUPER SALE Womenswear, your destination for stylish and affordable wo
 
 <section class="section">
 
-<h2 class="section-title gold">New Arrivals</h2>
+<h2 class="gold">New Arrivals</h2>
 
 <div class="card">
 ✨ Exciting New Collections Coming Soon ✨
@@ -221,15 +233,21 @@ Welcome to SUPER SALE Womenswear, your destination for stylish and affordable wo
 
 <section class="section">
 
-<h2 class="section-title gold">Gallery</h2>
+<h2 class="gold">Gallery</h2>
 
 <div class="gallery">
 
-<div class="placeholder">Future Collection Photo</div>
+<div class="placeholder">
+Future Collection Photo
+</div>
 
-<div class="placeholder">Future Collection Photo</div>
+<div class="placeholder">
+Future Collection Photo
+</div>
 
-<div class="placeholder">Future Collection Photo</div>
+<div class="placeholder">
+Future Collection Photo
+</div>
 
 </div>
 
@@ -237,13 +255,13 @@ Welcome to SUPER SALE Womenswear, your destination for stylish and affordable wo
 
 <section class="section">
 
-<h2 class="section-title gold">Visit Our Store</h2>
+<h2 class="gold">Visit Our Store</h2>
 
 <div class="card">
 
 📍 Opp. ACR Lifestyle Apartment<br>
 51/1, Kudlu Main Road,<br>
-Kudlu, Bengaluru – 560068
+Kudlu, Bengaluru - 560068
 
 <br><br>
 
@@ -257,9 +275,9 @@ Kudlu, Bengaluru – 560068
 
 <section class="section">
 
-<h2 class="section-title gold">Contact Us</h2>
+<h2 class="gold">Contact Us</h2>
 
-<div class="card contact-links">
+<div class="card contact">
 
 <a href="tel:+918618759467">
 📞 +91 8618759467
@@ -274,10 +292,10 @@ Kudlu, Bengaluru – 560068
 </section>
 
 <footer>
-© 2026 SUPER SALE Womenswear. All Rights Reserved.
+© SUPER SALE Womenswear
 </footer>
 
-<a href="https://wa.me/918618759467" class="whatsapp-float" target="_blank">
+<a href="https://wa.me/918618759467" class="whatsapp" target="_blank">
 <i class="fab fa-whatsapp"></i>
 </a>
 
